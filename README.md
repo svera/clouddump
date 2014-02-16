@@ -14,8 +14,8 @@ dumps from the cloud service. Dump files will be named as `yyyymmddhhmmss_databa
 Before starting, you need to set up the configuration for both scripts in a JSON file
 named `config.json` (a sample one is attached in the sources)
 
-Both are designed to be executed as cron tasks. While clouddump.py ideally should be executed at least once a day,
-`cloudsweep.py doesn't need to be executed that often. In the end, that frequence will depend on the amount of available space
+Both are designed to be executed as cron tasks. While `clouddump.py` ideally should be executed at least once a day,
+`cloudsweep.py` doesn't need to be executed that often. In the end, that frequence will depend on the amount of available space
 you have.
 
 Needless to say that you should be **very** careful when executing Cloudsweep, as it will remove **all** files older than
