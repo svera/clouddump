@@ -18,9 +18,9 @@ Both are designed to be executed as cron tasks. While `clouddump.py` ideally sho
 `cloudsweep.py` doesn't need to be executed that often. In the end, that frequence will depend on the amount of available space
 you have.
 
-Needless to say that you should be **very** careful when executing Cloudsweep, as it will remove **all** files older than
+Needless to say, you should be **very** careful when executing `cloudsweep.py`, as it will remove **all** files older than
 the specified number of days. It is recommended to store backups in a dedicated service account, or at least 
-in a specific folder.
+use a specific folder.
 
 By default, both scripts will run silently, writing their outputs to log files located at the logs directory. If you want to see
 this output also in the console, just add ` -v` or `--verbose`.
@@ -29,13 +29,13 @@ this output also in the console, just add ` -v` or `--verbose`.
 
 You can add more services and database engines creating new drivers for them. To do that, write a new class that must inherit
 from `Service` in the case of services and `Database` for database engines. 
-Take a look at both `drivers/driver_mega.py` and `drivers/drver_mysql.py` for implementation examples.  
+Take a look at both `drivers/driver_mega.py` and `drivers/driver_mysql.py` for implementation examples.  
 All drivers must be located in the drivers directory.
 Driver file names must always start with `driver_`, followed by the driver name. To use your newly created driver, specify its name in the _driver_ param of the service / database section in the `config.json` file.
 
 ## Troubleshooting
 
-Log files are stored in the `logs` directory.
+You can view log files, stored in the `logs` directory.
 
 ## Requirements
 
