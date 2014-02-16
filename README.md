@@ -39,7 +39,7 @@ You can view log files, stored in the `logs` directory.
 
 ## Requirements
 
-  1. Python2.7+
+  1. Python 2.7+
   2. mega.py - https://github.com/richardasaurus/mega.py
 
 ## To do
