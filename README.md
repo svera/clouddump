@@ -50,6 +50,3 @@ Log files are stored in the `logs` directory.
 
 Feel free to pull the source and make changes and additions.
 Make a pull request with your changes.
-
-
-
