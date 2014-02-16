@@ -1,0 +1,19 @@
+{
+    "database": 
+    {
+        "driver": "", // Database driver to use, e. g. 'mysql'
+        "name": "", // Your database name
+        "user_name": "", // Your user name
+        "password": "", // Your user pasword
+        "host": "" // Database host"
+    },
+    "service":
+    {
+        "driver": "", // Service driver to use, e. g. 'mega'
+        "user_name": "",// Service user name
+        "password": "", // user password
+        "delete_files_older_than":, // number of days,
+        "folder_name": "", // folder name to upload file to in your cloud storage
+        "retries":  // Number of retries in case of upload fail
+    }
+}
