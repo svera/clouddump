@@ -6,7 +6,7 @@ from tools import load_config, init_logger
 from factory import Factory
 from time import gmtime, strftime
 
-TMP_DIR = os.getcwd() + '/tmp/'
+TMP_DIR = os.getcwd() + '/dumps/'
 
 def main():
     '''
@@ -26,6 +26,8 @@ def main():
                         config['database']['driver'], config['database'])
         dumped_file = database.dump(config['database']['name'], file_name)
         service.upload(dumped_file)
+        os.remove(dumped_file)
+        logger.info("%s removed from local system" % dumped_file)
         logger.info("Program terminated successfully")
     except SystemExit:
         logger.info("Program terminated with errors")
